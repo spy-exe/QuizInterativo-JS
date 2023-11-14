@@ -3,27 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Interativo</title>
+    <title>Awesome Quiz App | CodingNepal</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="main.js" defer></script>
+    <script src="questions.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="img/logo.svg" alt="Logo">
-    </header>
+    <div class="start_btn"><button>Iniciar Quiz</button></div>
 
-    <main>
-        <section id="inicio">
-            <div class="container">
-                <h1>Quiz Interativo</h1>
-                <p>Teste seus conhecimentos gerais enquanto se diverte!</p>
-                <button id='start-btn' onclick="iniciarQuiz()">Iniciar</button>
+    <div class="info_box">
+        <div class="info-title"><span>Super Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Você terá <span>10 segundos</span> para responder cada questão.</div>
+            <div class="info">2. Você só pode escolher a alternativa uma vez.</div>
+            <div class="info">3. Você não poderá escolher uma alternativa depois que o tempo for esgotado.</div>
+            <div class="info">4. Você não pode sair do Quiz enquanto estiver jogando.</div>
+            <div class="info">5. Você ganhará <span>1 ponto</span> ao acertar a resposta.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Sair</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Super <strong>Quiz</strong></div>
+            <div class="timer">
+                <div class="time_left_txt">Tempo</div>
+                <div class="timer_sec">10</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+
+            </div>
+            <div class="option_list">
+
             </div>
         </section>
-    </main>
 
-    <footer>
-        <span>Todos os direitos reservados &copy; 2023 | <strong>Ricardo Figueiredo</strong></span>
-    </footer>
+        <footer>
+            <div class="total_que">
+
+            </div>
+            <button class="next_btn">></button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Você completou o Quiz!</div>
+        <div class="score_text">
+
+        </div>
+        <div class="buttons">
+            <button class="restart">Jogar novamente</button>
+            <button class="quit">Sair</button>
+        </div>
+    </div>
+
 </body>
+</html>
 </html>
